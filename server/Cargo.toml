@@ -1,0 +1,17 @@
+[package]
+name = "server"
+version = "0.1.0"
+authors = ["Adam Jacob <adam@systeminit.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+automerge = { path = "../automerge-rs/automerge" } 
+automerge-frontend = { path = "../automerge-rs/automerge-frontend" } 
+automerge-backend = { path = "../automerge-rs/automerge-backend" } 
+warp = "0.3.0"
+serde_json = "1.0.64"
+anyhow = "1.0.38"
+tokio = { version = "1.2.0", features = ["full"] }
+base64 = "0.13.0"
